@@ -19,7 +19,7 @@ import java.util.Map;
 @RequestMapping("/users")
 public class UserController {
 
-    ValidateController validate = new ValidateController();
+    private final ValidateController validate = new ValidateController();
     private final Map<Long, User> users = new HashMap<>();
 
     private final Logger log = LoggerFactory.getLogger(UserController.class);

@@ -12,7 +12,7 @@ import java.time.LocalDate;
 public class FilmControllerTest {
 
     Exception exception;
-    ValidateController validate = new ValidateController();
+    private final ValidateController validate = new ValidateController();
     Filme film;
 
     @BeforeEach

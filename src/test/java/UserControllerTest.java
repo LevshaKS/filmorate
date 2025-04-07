@@ -12,7 +12,7 @@ import java.time.LocalDate;
 public class UserControllerTest {
 
     Exception exception;
-    ValidateController validate = new ValidateController();
+    private final ValidateController validate = new ValidateController();
     User user;
 
     @BeforeEach

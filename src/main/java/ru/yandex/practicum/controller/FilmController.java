@@ -17,7 +17,7 @@ import java.util.Map;
 @RequestMapping("/films")
 public class FilmController {
 
-    ValidateController validateController = new ValidateController();
+    private final ValidateController validateController = new ValidateController();
     private final Map<Long, Filme> films = new HashMap<>();
     private final Logger log = LoggerFactory.getLogger(FilmController.class);
 
